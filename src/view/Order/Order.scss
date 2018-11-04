@@ -1,0 +1,422 @@
+//订单详情
+.orderDetail-wrap {
+    background: #F4F4F4;
+    padding-bottom: 2rem;
+    .orderDetail-address {
+        background: #fff;
+        display: flex;
+        align-items: center;
+        padding: 0.25rem 0.3rem 0.34rem 0.3rem;
+        background-image: url(../../assets/images/address-bg.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0 1.8rem;
+        .address-block:nth-of-type(2) {
+            width: 100%;
+            position: relative;
+        }
+        p {
+            word-break: break-all;
+            color: #000;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.1rem;
+            span {
+                flex: 1;
+            }
+            span:nth-of-type(2) {
+                text-align: right;
+                margin-top: 0.06rem;
+                margin-right: 0.3rem;
+            }
+        }
+        .dec {
+            color: #FC9B55;
+        }
+        .icon-location {
+            margin-right: 0.2rem;
+            font-size: 0.4rem;
+            color: gray;
+        }
+        .icon-arr-right {
+            position: absolute;
+            right: 0;
+            top: 0.55rem;
+            color: gray;
+            font-size: 0.3rem;
+        }
+    }
+    .orderDetail-noAddress {
+        background: #fff;
+        display: flex;
+        align-items: center;
+        padding: 0.35rem 0.5rem 0.4rem 0.5rem;
+        background-image: url(../../assets/images/address-bg.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0 1rem;
+        .icon-location {
+            margin-right: 0.13rem;
+        }
+    }
+    .orderDetail-list {
+        background: #fff;
+        border-top: 6px solid #F4F4F4;
+        border-bottom: 1px solid #F4F4F4;
+        padding-bottom: 0.25rem;
+        .orderDetail-list-title {
+            padding: 0.2rem 0.3rem 0 0.3rem;
+        }
+        .orderDetail-list-content {
+            .orderDetail-list-block {
+                display: flex;
+                align-items: center;
+                padding: 0.17rem 0.3rem;
+                div {
+                    p {
+                        width: 3rem;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    p:nth-of-type(1) {
+                        color: #000;
+                    }
+                    p:nth-last-of-type(2) {
+                        color: #B7B7B7;
+                        font-size: 0.22rem;
+                    }
+                    p:nth-last-of-type(1) {
+                        margin-top: 0.12rem;
+                        color: red;
+                    }
+                }
+                .img-block {
+                    img {
+                        width: 1.4rem;
+                        margin-right: 0.2rem;
+                    }
+                }
+            }
+            .orderDetail-list-block-num {
+                display: flex;
+                padding: 0 0.3rem;
+                div {
+                    flex: 1;
+                    .price {
+                        color: red;
+                    }
+                }
+                div:nth-of-type(2) {
+                    text-align: right;
+                }
+            }
+        }
+    }
+    .orderdetail-message {
+        border-bottom: 1px solid #F4F4F4;
+    }
+    .orderDetail-dispatching {
+        background: #fff;
+        display: flex;
+        padding: 10px 15px;
+        border-bottom: 1px solid #F4F4F4;
+        .dispatching-select {
+            margin-left: 0.3rem;
+            span {
+                border: 1px solid #ddd;
+                padding: 0.05rem 0.23rem;
+                border-radius: 7px;
+                margin-right: 0.15rem;
+            }
+            .active {
+                background: #FF9400;
+                border: 1px solid #FF9400;
+                color: #fff;
+            }
+        }
+        .dec {
+            flex: 1;
+            color: #C7C7C7;
+            text-align: right;
+        }
+    }
+    .bill {
+        background: #fff;
+        .title {
+            padding: 10px 15px;
+            border-bottom: 1px solid #efeeee;
+        }
+        .bill-content {
+            font-weight: 600;
+            padding: 10px 15px;
+            p {
+                margin-bottom: 0.15rem;
+            }
+            p:nth-last-of-type(1) {
+                padding-top: 0.15rem;
+                border-top: 1px solid #efeeee;
+            }
+        }
+    }
+    .coupon {
+        background: #fff;
+        padding: 10px 15px;
+        margin-bottom: 2rem;
+    }
+    .orderDetail-bottom {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        background: #fff;
+        padding: 0.3rem 0.2rem;
+        box-shadow: 1px 1px 1px 1px #e7e3e3;
+        div {
+            flex: 1;
+            .price {
+                color: red;
+            }
+        }
+        div:nth-of-type(2) {
+            text-align: right;
+            span {
+                color: #fff;
+                padding: 0.15rem 0.4rem;
+                border-radius: 3px;
+                background: #B69744;
+            }
+        }
+    }
+}
+
+//订单支付
+.orderPay-wrap {
+    .orderpay-top {
+        padding: 0.15rem 0.3rem;
+        font-size: 0.28rem;
+        background: #f9f9f9;
+        p {
+            margin-bottom: 0.1rem;
+        }
+        .price {
+            color: red;
+            font-size: 0.36rem;
+        }
+    }
+    .orderPay-select {
+        .van-cell {
+            padding: 0.25rem 14px;
+            font-size: 0.265rem;
+        }
+        .van-cell__title {
+            flex: 3;
+        }
+        .van-radio .van-icon-checked {
+            color: #FF3824;
+        }
+        .dec {
+            color: #979797;
+        }
+    }
+    .kBean-block {
+        padding: 0.35rem 0.3rem;
+        font-size: 0.26rem;
+        .van-cell {
+            padding: 10px 0;
+            margin-top: 0.3rem;
+        }
+        .van-field__control {
+            border: 1px solid #ddd;
+            padding: 0.15rem 0.2rem;
+            font-size: 0.26rem;
+            background: #E0E0E0;
+        }
+        .van-cell__value--alone {
+            height: 1.2rem;
+        }
+    }
+    .maxKbean-block {
+        color: #FF5C4B;
+        text-align: center;
+        padding: 0.3rem 0;
+        font-size: 0.3rem;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+    }
+    .orderPay-submit {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 0.25rem;
+        text-align: center;
+        background: #FF3824;
+        color: #fff;
+        font-size: 0.32rem;
+    }
+    .van-dialog {
+        .title {
+            text-align: center;
+            color: #888484;
+            padding: 0.35rem 0 0.15rem 0;
+            font-size: 0.32rem;
+        }
+        .forgot {
+            font-size: 0.2rem;
+            text-align: right;
+            color: blue;
+            margin-right: 0.5rem;
+        }
+    }
+}
+
+.orderDetail-bg {
+    height: 0.3rem;
+    border-top: 1px solid #efeeee;
+    border-bottom: 1px solid #efeeee;
+    background: #F4F4F4;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+//预付款详情
+.advanceDetail-wrap {
+    .advanceDetail-goods {
+        display: flex;
+        align-items: center;
+        font-size: 0.285rem;
+        div {
+            flex: 1;
+            p {
+                margin-bottom: 0.1rem;
+            }
+            img {
+                width: 2.2rem;
+            }
+            .price {
+                font-size: 0.34rem;
+                color: red;
+            }
+        }
+        div:nth-of-type(2) {
+            flex: 5;
+        }
+    }
+    .advanceDetail-list {
+        .advanceDetail-block {
+            display: flex;
+            border-bottom: 1px solid #EFEFEF;
+            .block {
+                flex: 1;
+                padding: 0.22rem 0.25rem;
+                font-weight: bold;
+                font-size: 0.26rem;
+            }
+            .price {
+                color: #CD684B;
+                font-weight: normal;
+            }
+            .dec {
+                color: #9D9D9D;
+                font-weight: normal;
+            }
+            .block:nth-of-type(2) {
+                text-align: right;
+            }
+            input::-webkit-input-placeholder {
+                color: #C3C1C1;
+            }
+        }
+        .advanceDetail-block:nth-last-of-type(1) {
+            //          border-bottom: 0;
+        }
+        .advanceDetail-real {
+            padding: 0.22rem 0.25rem;
+            font-size: 0.3rem;
+            .price {
+                color: red;
+            }
+            .dec {
+                color: #959595;
+                font-size: 0.26rem;
+            }
+        }
+    }
+    .advance-order {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        span {
+            flex: 1;
+            text-align: center;
+            padding: 0.23rem 0;
+            color: #fff;
+            font-size: 0.28rem;
+            background: #36B25D;
+        }
+        span:nth-of-type(2) {
+            background: #FF542E;
+        }
+    }
+}
+
+//支付结果
+.payResult-wrap {
+    background: #F0EFF5;
+   .payResult-title {
+       background: #F2F2F2;
+       padding: 0.35rem 0.3rem;
+       color: #25B00F;
+       font-size: 0.32rem;
+       display: flex;
+       align-items: center;
+       .iconfont {
+           color: #25B00F;
+           font-size: 0.42rem;
+           margin-right: 0.15rem;
+       }
+   }
+   .payResult-content {
+       background: #fff;
+       .price {
+           padding: 1rem 0;
+           text-align: center;
+           font-size: 0.66rem;
+           border-bottom: 1px solid #ededed;
+       }
+       .content {
+           display: flex;
+           padding: 0.15rem 0.2rem;
+           span {
+               flex: 1;
+           }
+           span:nth-of-type(2) {
+               text-align: right;
+           }
+       }
+   }
+   .pay-btn {
+       text-align: center;
+       margin-top: 1rem;
+       .order,.buy {
+           display: inline-block;
+           width: 2.5rem;
+           text-align: center;
+           padding: 0.2rem 0;
+           font-size: 0.3rem;
+       }
+       .order {
+           background: #fff;
+           border: 1px solid #ddd; 
+       }
+       .buy {
+           margin-left: 0.5rem;
+           border: 1px solid #ddd;
+           background: #e5004f;
+           color: #fff;
+       }
+   }
+}

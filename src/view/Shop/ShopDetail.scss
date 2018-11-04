@@ -1,0 +1,269 @@
+.shopDetail-wrap{
+    background-color: #fafafa;
+
+    .shopDetail-top{
+        background-color: #42b197;
+        height: 1rem;
+
+        .top-block{
+            margin-left: .15rem;
+            font-size: .4rem;
+            font-weight: 800;
+            line-height: 1rem;
+
+            .iconfont{
+                font-size: .5rem;
+                color: #fafafa;
+            }
+        }
+    }
+
+    .van-swipe {
+        height: 4.8rem;
+        img {
+            width: 100%;
+        }
+    }
+
+    .shopDetal-header{
+        height: 1rem;
+        line-height: 1rem;
+        span{
+            font-size: 0.35rem;
+            font-weight: 800;
+        }
+
+        .icon-anjianfengexian{
+            font-weight: 900;
+            color:#42b197;
+            margin-left: 0.2rem;
+        }
+
+        .icon-fenxiang3{
+            font-size: 0.45rem;
+            color:#42b197;
+            float: right;
+            margin-right: .15rem;
+        }
+    }
+
+    .van-tabs{
+
+        .van-tab{
+            font-size: 0.3rem;
+
+            .iconfont{
+                margin-right: .1rem;
+                font-size: 0.35rem;
+            }
+        }
+
+        .detail-content{
+            width: 100%;
+            margin-top: .15rem;
+
+            .content-header{
+                margin-left: .2rem;
+                font-size: .35rem;
+                width: 100%;
+            }
+
+            .content-desc{
+                margin-left: .2rem;
+                margin-right: .15rem;
+                word-wrap: break-word;
+                font-size: .3rem;
+            }
+
+            .room-list{
+                width: 100%;
+               overflow-x: auto;
+                div{
+                    overflow-x: hide;
+                    width: 1000rem;
+                }
+
+                .room-item{
+                    width: 3rem;
+                    float: left;
+                    margin: .2rem 0.2rem;
+                    text-align: left;
+
+                    span{
+                        color:#4dc86f;
+                        font-size: 0.32rem;
+                        margin-top: 0.2rem;
+                    }
+
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+
+            .comment-item{
+                display: inline-block;
+                margin-top: .2rem;
+                margin-bottom: 0.1rem;
+                border: #fafafa solid 1px;
+                margin-left: 0.2rem;
+                margin-right: 0.2rem;
+
+                .item-header{
+                    line-height: 1rem;
+                    font-size: .3rem;
+                    font-weight: 600;
+                    color:#666;
+                    img{
+                        border-radius: 50%;
+                        width: 1rem;
+                        height: 1rem;
+                    }
+
+                    .header-time{
+                        float: right;
+                    }
+
+                    span:first{
+                        margin-left: 0.15rem;
+                    }
+                }
+
+                p{
+                    font-size: .25rem;
+                }
+            }
+        }
+    }
+
+    .yd{
+        max-height: 10rem;
+        // height: 10rem;
+        .yd-header{
+            height: 1rem;
+            line-height: 1rem;
+            font-size: 0.4rem;
+            font-weight: 600;
+            text-align: center;
+            background: rgb(255, 255, 204);
+    
+            .icon-quxiao{
+                font-size: 0.5rem;
+                float: right;
+            }
+        }
+        .yd-content{
+            width: 100%;
+            //height: 5rem;
+            //max-height: 10rem;
+            // overflow: auto;
+            // position: absolute;
+            // top: 1rem;
+            // bottom: 1rem;
+            //height: 10rem;
+            display: inline-block;
+    
+            .yd-left{
+                width: 2rem;
+                float: left;
+                border-right: #eee solid 1px;
+    
+                p{
+                    height: 1rem;
+                    line-height: 1rem;
+                    font-size: 0.3rem;
+                    text-align: center;
+                }
+    
+                p.red{
+                    background: #42b197;
+                    color:#fff;
+                }
+            }
+    
+            .yd-right{
+                padding-left: 2rem;
+                width: 100%;
+                max-height: 8rem;
+
+                .van-row{
+                    height: 0.8rem;
+                    line-height: 0.8rem;
+                    text-align: center;
+                    .van-col{
+                        font-size: 0.3rem;
+                    }
+                }
+
+                 table{
+                     width: 100%;
+                     table-layout: fixed;
+                    //  border-spacing: 0;
+                    //  border-collapse: collapse;
+
+                    tr{
+                        width: 100%;
+                        display: block;
+                        border-left: #eee solid 1px;
+                    }
+                    th:first-child{
+                        width: 3rem;
+                    }
+                     
+                    th{
+                         height: 0.8rem;
+                         line-height: 0.8rem;
+                         text-align: center;
+                         font-size: 0.25rem;
+                         width: 49%;
+                         border-right: #eee solid 1px;
+                         border-bottom: #eee solid 1px;
+                    }
+            
+                    tbody{
+                        display: block;
+                        max-height: 6rem;
+                        overflow-y: scroll;
+                    }
+
+                    .time-item span{
+                        border: #eaeaea solid 1px;
+                        width: 2rem;
+                        height: 0.6rem;
+                        line-height: 0.6rem;
+                        display: inline-block;
+                        border-radius: 5px;
+                    }
+
+                    .time-item span.selected{
+                        background: #42b197;
+                        color: #fff;
+                    }
+
+                    .time-item span.sold{
+                        background: red;
+                        color: #fff;
+                    }
+
+                    .time-item span.disabled{
+                        background: #eaeaea;
+                        color: #fff;
+                    }
+                 }
+            }
+        }
+    
+        .yd-btn{
+            height: 1rem;
+            color: #fff;
+            text-align: center;
+            line-height: 1rem;
+            background: red;
+            font-size: 0.3rem;
+            // position: absolute;
+            // bottom: 0;
+            width: 100%;
+        }
+    }
+    
+}

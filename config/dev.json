@@ -1,0 +1,38 @@
+{
+  "project": "plpl",
+  "localDevServer": {
+    "host": "0.0.0.0",
+    "port": "8082",
+    "defaultPage": "./index.html"
+  },
+  "remoteDevServer": {
+    "dev": {
+      "protocol": "http",
+      "host": "129.28.70.171:80",
+      "port": "80",
+      "pathname": "/webchatBook"
+    },
+    "test": {
+      "protocol": "http",
+      "host": "129.28.70.171:80",
+      "port": "80",
+      "pathname": "/webchatBook"
+    }
+  },
+  "sftp": {
+    "dev": {
+      "host": "112.74.45.120",
+      "port": "22021",
+      "user": "root",
+      "pass": "j1qbGfi{ciptA?.lc{3g2lFM}O76nfpf",
+      "remotePath": "/data/apprun/yyouyu/front_apache-tomcat-7.0.72/webapps/frontWeb/app"
+    },
+    "test":{
+      "host":     "47.106.171.66",
+      "port":     "22073",
+      "user":     "apprun",
+      "pass":     "oK&k11jiZ",
+      "remotePath":"/data/apprun/yyouyu/front_apache-tomcat-7.0.72/webapps/frontWeb/app"
+    }
+  }
+}

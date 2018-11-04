@@ -1,0 +1,75 @@
+//登录
+.login-wrap {
+    .login-center {
+        .van-button--normal {
+            width: 90%;
+            margin: 0.5rem 5% 0.26rem 5%;
+            font-size: 0.34rem;
+        }
+    }
+    .login-link {
+        display: flex;
+        width: 90%;
+        margin-left: 5%;
+        color: #FF3824;
+        span {
+            flex: 1;
+        }
+        span:nth-of-type(2) {
+            text-align: right;
+        }
+    }
+}
+
+//注册
+.register-wrap {
+    .resister-center {
+        .code-block {
+            position: relative;
+            .get-code-btn {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .van-button {
+                line-height: inherit;
+            }
+        }
+        .van-button--normal {
+            width: 90%;
+            margin: 0.5rem 5% 0.26rem 5%;
+            font-size: 0.34rem;
+        }
+        .agree {
+            margin: 0.2rem 0.3rem 0 0.3rem;
+            .van-checkbox {
+                display: inline;
+            }
+            .blue {
+                color: blue;
+            }
+        }
+    }
+    .van-popup {
+        width: 80%;
+        height: 60%;
+        max-height: inherit;
+        margin-top: 0rem;
+        padding: 0.3rem;
+        overflow-y: inherit;
+        .title {
+            text-align: center;
+            font-size: 0.32rem;
+            font-weight: 600;
+        }
+        .content {
+            height: 75%;
+            overflow-y: auto;
+            margin-top: 0.2rem;
+        }
+        .read {
+            text-align: center;
+            margin-top: 0.2rem;
+        }
+    }
+}

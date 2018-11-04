@@ -1,0 +1,295 @@
+    .home-wrap {
+        position: relative;
+        .van-swipe {
+            height: 4.8rem;
+            img {
+                width: 100%;
+            }
+        }
+        .search {
+            display: flex;
+            align-items: center;
+            position: fixed;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            margin: 0 auto;
+            height: 0.7rem;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.5);
+            .icon-sousuo {
+                flex: 1;
+                text-align: right;
+                color: #8E8C8C;
+                font-size: 0.37rem;
+            }
+            input::-webkit-input-placeholder {
+                color: #8E8C8C;
+            }
+            input {
+                background: none;
+                flex: 6;
+                font-size: 0.3rem;
+                margin-left: 0.2rem;
+                color: #000;
+            }
+            .toSearch {
+                position: absolute;
+                right: 5%;
+                padding: 0.2rem;
+                color: #000;
+                font-size: 0.28rem;
+            }
+        }
+        .home-price {
+            display: flex;
+            padding: 0.4rem 0 0.2rem 0;
+            background: #F5F5F5;
+            .gold-price,
+            .silver-price {
+                flex: 1;
+                text-align: center;
+                .title {
+                    b {
+                        color: #000;
+                        font-size: 0.28rem;
+                    }
+                    span {
+                        color: #5F5F5F;
+                    }
+                }
+                .price {
+                    margin: 0.05rem 0 0.1rem 0;
+                    b {
+                        font-size: 0.44rem;
+                        color: #E60000;
+                        margin-right: 0.1rem;
+//                      font-family: -webkit-pictograph;
+                    }
+                }
+                .market-price {
+                    color: #A09E9E;
+                    font-size: 0.22rem;
+                    span {
+                        text-decoration: line-through;
+                    }
+                }
+                .advance {
+                    background: #B69744;
+                    color: #fff;
+                    border-radius: 2px;
+                    padding: 0.13rem 0;
+                    margin: 0.2rem 0.63rem;
+                    font-size: 0.28rem;
+                }
+            }
+        }
+
+        .home-shop{
+            margin-top: .2rem;
+            text-align: center;
+            color: rgb(66, 177, 151);
+            font-size: .5rem;
+            font-weight: 800;
+        }
+
+        .shop-list{
+            font-size: 0.3rem;
+            font-weight: bold;
+            padding: 0.1rem 0;
+            margin-bottom: .2rem;
+            img{
+                width: 100%;
+                height: 3.6rem;
+            }
+
+            .shop-name{
+                margin-left: 0.3rem;
+            }
+
+            .shop-address{
+                margin-left: 0.3rem;
+                font-size: .2rem;
+                color: #666;
+                font-weight: 100;
+
+                .iconfont{
+                    color:#666;
+                    font-size: .4rem;
+                }
+            }
+
+
+            .shop-price{
+                color: red;
+                text-align: right;
+                margin-right: 0.3rem;
+                display: inline;
+                float: right;
+            }
+        }
+
+        .home-help {
+            display: flex;
+            padding: 0.37rem 0;
+            background: #fff;
+            .dec {
+                flex: 1;
+                text-align: center;
+                .block {
+                    margin-bottom: 0.17rem;
+                    img {
+                        width: 1.1rem;
+                    }
+                    span{
+                        width: 1.1rem;
+                    }
+                }
+
+                .block1{
+                    display: inline-block;
+                    border-radius:50px;
+                    background: #42b197;
+                    width: 1.1rem;
+                    height: 1.1rem;
+
+                    i{
+                        font-size: 0.6rem;
+                        line-height: 1rem;
+                    }
+                }
+            }
+        }
+        .home-dec-bg1,
+        .home-dec-bg2 {
+            img {
+                width: 100%;
+            }
+        }
+        .home-introduce {
+            display: flex;
+            padding: 0.3rem;
+            background: #fff;
+            div {
+                flex: 1;
+                padding: 0 0.1rem;
+                height: 2.2rem;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .home-product-list {
+            display: flex;
+            flex-wrap: wrap;
+            background: #fff;
+            padding: 0.3rem;
+            .block {
+                flex: 0 0 50%;
+                text-align: center;
+                img {
+                    height: 2.5rem;
+                }
+                .series {
+                    color: #000;
+                    font-size: 0.3rem;
+                    font-weight: 600;
+                    text-align: left;
+                    margin-left: 0.5rem;
+                }
+                .title {
+                    color: #8F8D8D;
+                    margin: 0 0 0.05rem 0;
+                    overflow: hidden;
+                    width: 2.5rem;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    font-size: 0.22rem;
+                    text-align: left;
+                    margin-left: 0.5rem;
+                }
+                .price {
+                    color: #E60000;
+                    font-size: 0.3rem;
+                    text-align: left;
+                    margin-left: 0.5rem;
+                }
+                .buy {
+                    span {
+                        background: #B69744;
+                        color: #fff;
+                        border-radius: 1px;
+                        display: inline-block;
+                        height: 0.6rem;
+                        line-height: 0.6rem;
+                        width: 2.5rem;
+                        font-size: 0.28rem;
+                        text-align: center;
+                        margin: 0.17rem 0.3rem;
+                    }
+                }
+            }
+        }
+        .van-actionsheet {
+            height: 6rem;
+            overflow-y: inherit;
+            background: #fff;
+            .marketType {
+                position: absolute;
+                display: flex;
+                top: -0.165rem;
+                width: 100%;
+                .market-block {
+                    flex: 1;
+                    text-align: center;
+                    span {
+                        color: #595959;
+                        font-size: 0.3rem;
+                        background: #e6e5e5;
+                        padding: 0.15rem 0.35rem 0.08rem 0.35rem;
+                        border-radius: 8px;
+                        font-family: monospace;
+                        //                      border-top-right-radius: 8px;
+                        //                      border-top-left-radius: 8px;
+                    }
+                }
+                .market-block:nth-of-type(1) {
+                    margin-left: 1.3rem;
+                }
+                .market-block:nth-of-type(2) {
+                    margin-right: 1.3rem;
+                }
+                .active {
+                    span {
+                        background: #F63234;
+                        color: #fff;
+                    }
+                }
+            }
+            .market-time {
+                position: fixed;
+                bottom: 0.1rem;
+                width: 100%;
+                .currencyTradeSelect {
+                    display: flex;
+                    div {
+                        flex: 1;
+                        text-align: center;
+                        border-top: 1px solid #fff;
+                        padding: 0.1rem 0;
+                    }
+                    .active {
+                        border-top: 1px solid #ea4648;
+                        color: #ea4648;
+                    }
+                }
+            }
+        }
+        .van-loading {
+            position: absolute;
+            right: 45%;
+            top: 35%;
+            color: #000!important;
+        }
+    }

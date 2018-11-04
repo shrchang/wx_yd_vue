@@ -1,0 +1,126 @@
+.self-wrap{
+    background: #e6e6e6 no-repeat;
+    .self-top{
+        //margin-bottom: 0.5rem;
+        border-bottom: #666 solid 1px;
+        background: #ffffff no-repeat;
+        .headImg{
+            width: 100%;
+            margin-top: 0.4rem;
+            text-align: center;
+            
+            .avatar{
+                border-radius: 50%;
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+        }
+
+        .header-name{
+            width: 100%;
+            text-align: center;
+            font-size: 0.32rem;
+            font-weight: 600;
+            margin-top: 0.1rem;
+        }
+
+        .set{
+            position: absolute;
+            top: 0.3rem;
+            right: 0.3rem;
+            font-size: 0.2rem;
+
+            .icon-shezhi{
+                font-size: 0.5rem;
+                color: #333;
+            }
+        }
+
+        .hy{
+            height: 1.8rem;
+            background: #d7d7d7 no-repeat;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+
+            .hy-title{
+                font-size: 0.35rem;
+                font-weight: 600;
+                line-height: 1rem;
+                position: relative;
+                top: -0.2rem;
+            }
+
+            .hy-desc{
+                font-size: 0.3rem;
+                margin-left: 0.3rem;
+            }
+
+            .van-button--danger{
+                background-color: #f1a932;
+                border: 1px solid #f1a932;
+                float: right;
+                right: .15rem;
+                top: .15rem;
+            }
+
+            .icon-huiyuan{
+                color:#f1a932;
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .self-wallet{
+        padding-top: 0.4rem;
+        width: 100%;
+        height: 1.2rem;
+        background: #ffffff no-repeat;
+        border-bottom: #666 solid 1px;
+        div{
+            width: 50%;
+            float: left;
+            text-align: center;
+            line-height: 0.5rem;
+            font-size: 0.3rem;
+
+            img{
+                width: 0.5rem;
+            }
+        }
+
+        div:first-child{
+            border-right: #e6e6e6 solid 1px;
+        }
+    }
+
+    .self-opt{
+       // margin-top: 0.2rem;
+        .opt-btn{
+            background: #ffffff no-repeat;
+            height: 1rem;
+            line-height: 1rem;
+            margin-top:0.1rem;
+            padding-left: 0.3rem;
+
+            .opt-title{
+                font-size: 0.3rem;
+                margin-left: 0.1rem;
+                position: relative;
+                top: -0.05rem;
+            }
+            
+            .iconfont{
+               font-size: 0.4rem;
+            }
+
+            .fr{
+                float: right;
+                color: #e6e6e6;
+
+                span{
+                    font-size: 0.3rem;
+                }
+            }
+        }
+    }
+}

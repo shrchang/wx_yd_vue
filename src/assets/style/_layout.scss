@@ -1,0 +1,39 @@
+/*
+* layout
+*/
+@charset "UTF-8";
+@import "mixins";
+@import "variables";
+
+.page-wrap{
+  min-height: 100vh;
+  background: #fff;
+}
+//.page-content { 
+//  min-width: 1200px; 
+//  width: expression((documentElement.clientWidth > 1140) ? "1140px" : "auto" ); 
+//}
+// 谷歌滚动条
+::-webkit-scrollbar {
+width: 8px;
+background: #ddd;
+}
+::-webkit-scrollbar-thumb {
+border-radius: 8px;
+background: rgba(0, 0, 0, .5);
+}
+
+// IE滚动条
+// Jason大佬 你跟老司机调下IE滚动条颜色吧
+body {
+  /*滚动条滑块按钮的颜色*/
+  scrollbar-face-color: #22293a;
+  /*三角箭头的颜色*/
+  scrollbar-arrow-color: #22293a;
+  /*滚动条整体颜色*/
+  scrollbar-highlight-color: #f8f8f8;
+  /*滚动条轨道颜色*/
+  scrollbar-track-color: #666;
+  /*滚动条阴影*/
+  scrollbar-shadow-color: #ccc;
+}
